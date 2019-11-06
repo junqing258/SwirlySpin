@@ -1,0 +1,11 @@
+{
+    "cmd": "choiceGame",
+    "code": "0",
+    "msg": "success",
+    "res": {
+	    "data": {
+	        "gameType": 5,
+	        "free_num": 4
+	    }
+    }
+}

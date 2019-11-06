@@ -1,0 +1,18 @@
+{
+    "statusCode": "0000",
+    "list": [{
+        "amount": 423000,
+        "nickName": "qianqian",
+        "rank_trend": 3,
+        "rank": 1
+    }, {
+        "amount": 411000,
+        "nickName": "shine002昵称",
+        "rank_trend": 1,
+        "rank": 2
+    }],
+    "myRank": "34",
+    "myAmount": 10,
+    "myName": "",
+    "myRankTrend": 0
+}

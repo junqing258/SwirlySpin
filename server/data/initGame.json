@@ -1,0 +1,27 @@
+{
+    "cmd": "initGame",
+    "code": "0",
+    "msg": "success",
+    "res": {
+        "data": {
+            "left_num": "1",
+            "bet_point": "4000",
+            "game_status": "1",
+            "left_point": 0,
+            "total_point": 0,
+            "my_key": "13",
+            "unlock": {
+                "3": 1,
+                "4": 3,
+                "5": 6,
+                "6": 10
+            },
+            "freeInfo": {
+                "3": 1,
+                "4": 3,
+                "5": 6,
+                "6": 10
+            }
+        }
+    }
+}

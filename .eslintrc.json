@@ -1,0 +1,17 @@
+{   
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "js": true
+        }        
+    },
+    "rules": {
+        "comma-dangle": ["off", "always-multiline"],
+        "semi": 2,
+        "babel/new-cap": 1,
+        "babel/no-invalid-this": 1
+    },
+    "plugins": ["babel"]
+}

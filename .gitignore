@@ -1,0 +1,12 @@
+node_modules/
+.vscode/
+.vs/
+/bin/*
+!/bin/index.html
+!/bin/unpack.json
+/bin/libs/min
+!/bin/ani
+!/bin/audio
+!/bin/font
+*.log
+/src/ui
