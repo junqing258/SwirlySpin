@@ -67,6 +67,7 @@ module.exports = {
     },
     devServer: {
         hot: false,
+        port: 8090,
         host: (function() {
             let wlan;
             if (os && os.networkInterfaces) wlan = os.networkInterfaces()['WLAN'];
