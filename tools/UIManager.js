@@ -12,14 +12,17 @@ const pagePath = path.resolve(__dirname, "../laya/pages/");
 
 (() => {
 	const uiFiles = glob.sync('**/*.ui', {cwd: pagePath });
-	const uiTpls = [];
+	let uiTpls = [], viewRegs = [];
 	uiFiles.forEach(uiFile => {
 		const parser = new UIParser({ pagePath });
 		const data = parser.parse(uiFile);
+		const vreg = data.viewClassMaps.filter(f => !viewRegs.find(v => v[0] === f[0]));
+		viewRegs.push(...vreg);
 		const uiTpl = template(__dirname + "/tpl/ui.art", data);
 		uiTpls.push(uiTpl);
 	});
-	const uiMaxTpl = template(__dirname + "/tpl/ui-max.art", { tpls: uiTpls });
+	viewRegs = Array.from(new Set(viewRegs));
+	const uiMaxTpl = template(__dirname + "/tpl/ui-max.art", { tpls: uiTpls, viewRegs });
 	fs.writeFileSync(path.resolve(__dirname, "../src/ui/layaUI.max.all.js"), uiMaxTpl);
 })();
 
