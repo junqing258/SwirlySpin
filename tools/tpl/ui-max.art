@@ -1,0 +1,10 @@
+var CLASS$=Laya.class;
+var STATICATTR$=Laya.static;
+var PACKAGE$=Laya.__package;
+var View=laya.ui.View;
+var Dialog=laya.ui.Dialog;
+var REG = Laya.ClassUtils.regClass;
+// window.ui = {};
+{{each tpls tpl index}}
+{{@tpl}}
+{{/each}}

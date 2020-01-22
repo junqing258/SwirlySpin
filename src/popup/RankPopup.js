@@ -60,9 +60,8 @@ export default class RankPopup extends ui.popup.RankUI {
                 case 2:
                 case 3:
                     return this.close();
-
             }
-        })
+        });
 
     }
 
