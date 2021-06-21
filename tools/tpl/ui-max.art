@@ -1,0 +1,10 @@
+var CLASS$=Laya.class;
+var STATICATTR$=Laya.static;
+var View=laya.ui.View;
+var Dialog=laya.ui.Dialog;
+
+{{each viewRegs}}View.regComponent("{{$value[0]}}", {{$value[1]}}); 
+{{/each}}
+{{each tpls tpl index}}
+{{@tpl}}
+{{/each}}

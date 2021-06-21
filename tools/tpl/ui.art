@@ -1,0 +1,16 @@
+;(function() {
+    {{each imports}}var {{$value[0]}} = {{$value[1]}}; 
+    {{/each}}
+    /** ui.{{pack}}.{{className}} **/
+    class {{className}} extends {{classType}} {
+        {{each vars}}{{$value[0]}};
+        {{/each}}
+        constructor() { super(); }
+        createChildren() {
+            super.createChildren();
+            this.createView({{className}}.uiView);
+        }
+    }
+    {{className}}.uiView = {{@uiObj}};
+    Laya.__package("ui.{{pack}}.{{className}}", {{className}});
+})();

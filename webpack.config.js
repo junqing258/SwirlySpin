@@ -21,7 +21,7 @@ var plugins = [
 
 
 var plugins2 = [
-    new webpack.optimize.UglifyJsPlugin({
+    /*new webpack.optimize.UglifyJsPlugin({
         drop_console: true,
         compress: true,
         mangle: false,
@@ -31,7 +31,7 @@ var plugins2 = [
         beautify: false,
         sourceMap: false,
         test: /js\/.*build\.js($|\?)/i
-    })
+    })*/
 ];
 
 if (process.env.NODE_ENV === 'production') {
@@ -67,6 +67,7 @@ module.exports = {
     },
     devServer: {
         hot: false,
+        port: 8090,
         host: (function() {
             let wlan;
             if (os && os.networkInterfaces) wlan = os.networkInterfaces()['WLAN'];
