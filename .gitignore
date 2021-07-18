@@ -4,6 +4,7 @@ node_modules/
 /bin/*
 !/bin/index.html
 !/bin/unpack.json
+!/bin/libs/
 /bin/libs/min
 !/bin/ani
 !/bin/audio
